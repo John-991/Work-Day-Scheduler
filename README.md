@@ -18,6 +18,14 @@ Local Storage Functionality: Events are securely saved in local storage upon cli
 
 Persistence of Events: The application retains saved events even after a page refresh, ensuring the continuity of scheduled tasks.
 
+## Installation
+
+Upload index.html, license.txt, CSS and JS files to the deployed webserver.
+
+The deployed website linked was deployed using GitHub Pages. 
+
+[Link to the deployed website](https://john-991.github.io/Work-Day-Scheduler/)
+
 The following animation demonstrates the application functionality:
 
 <img src="starter/05-third-party-apis-homework-demo.gif" width="650" height="400">
