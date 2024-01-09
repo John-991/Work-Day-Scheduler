@@ -20,4 +20,4 @@ Persistence of Events: The application retains saved events even after a page re
 
 The following animation demonstrates the application functionality:
 
-<img src="starter/05-third-party-apis-homework-demo.gif" width="650" height="600">
+<img src="starter/05-third-party-apis-homework-demo.gif" width="650" height="400">
