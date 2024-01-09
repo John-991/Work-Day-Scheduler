@@ -43,16 +43,10 @@ $(".descr").on("input", function() {
 });
     
      // Get item from local storage 
-     $("#hour8 .descr").val(localStorage.getItem("hour8"));
-     $("#hour9 .descr").val(localStorage.getItem("hour9"));
-     $("#hour10 .descr").val(localStorage.getItem("hour10"));
-     $("#hour11 .descr").val(localStorage.getItem("hour11"));
-     $("#hour12 .descr").val(localStorage.getItem("hour12"));
-     $("#hour13 .descr").val(localStorage.getItem("hour13"));
-     $("#hour14 .descr").val(localStorage.getItem("hour14"));
-     $("#hour15 .descr").val(localStorage.getItem("hour15"));
-     $("#hour16 .descr").val(localStorage.getItem("hour16"));
-     $("#hour17 .descr").val(localStorage.getItem("hour17"));
+    for (var i = 8; i <= 17; i++) {
+        var hourToString = "#hour" + i + " .descr";
+        $(hourToString).val(localStorage.getItem("hour" + i));
+    }
  
      timeTracker();
      hourlyColor();
