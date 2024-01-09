@@ -36,6 +36,12 @@ $(document).ready(function () {
         })
     }
 
+$(".description").on("input", function() {
+    var hour = $(this).parent().attr("id");
+    var text = $(this).val();
+    localStorage.setItem(hour, text);
+});
+    
      // Get item from local storage 
      $("#hour8 .descr").val(localStorage.getItem("hour8"));
      $("#hour9 .descr").val(localStorage.getItem("hour9"));
