@@ -36,7 +36,7 @@ $(document).ready(function () {
         })
     }
 
-$(".description").on("input", function() {
+$(".descr").on("input", function() {
     var hour = $(this).parent().attr("id");
     var text = $(this).val();
     localStorage.setItem(hour, text);
