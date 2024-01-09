@@ -35,19 +35,20 @@ $(document).ready(function () {
             }
         })
     }
-
-$(".descr").on("input", function() {
+    
+    // Save text from text areas to local storage on input change
+    $(".descr").on("input", function() {
     var hour = $(this).parent().attr("id");
     var text = $(this).val();
     localStorage.setItem(hour, text);
-});
+    });
     
-     // Get item from local storage 
+    // Retrieve text from local storage for each hour block
     for (var i = 8; i <= 17; i++) {
         var hourToString = "#hour" + i + " .descr";
         $(hourToString).val(localStorage.getItem("hour" + i));
     }
- 
+     // Execute functions for time tracking and coloring
      timeTracker();
      hourlyColor();
 });
